@@ -41,7 +41,6 @@ CREATE TABLE seance
     id           bigserial primary key,
     movie_fk     int REFERENCES movie (id),
     day_price_fk int REFERENCES price (id),
---   временная переменная
     start_time   time not null
 );
 
