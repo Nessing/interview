@@ -1,0 +1,4 @@
+select name, start_time, time from seance
+left join movie ON movie_fk = movie.id
+left join duration ON movie.duration_fk = duration.id
+order by start_time
