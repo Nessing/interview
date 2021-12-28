@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ru.nessing.interview.lessonSpring.entities.Student;
 import ru.nessing.interview.lessonSpring.repositories.AppRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -12,6 +13,10 @@ import java.util.Optional;
 public class AppService {
 
     private final AppRepository repository;
+
+    public List<Student> findAll() {
+        return repository.findAll();
+    }
 
     public String saveStudent(Student student) {
         repository.save(student);

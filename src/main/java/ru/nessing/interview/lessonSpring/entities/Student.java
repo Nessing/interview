@@ -1,7 +1,6 @@
 package ru.nessing.interview.lessonSpring.entities;
 
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 
